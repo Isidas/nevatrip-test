@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+      <section class="route">
+        <div class="route__wrapper">
+            <h2 class="route__title">Выберите направление:</h2>
+            <select name="route" id="route">
+              <option value="Выберите маршрут" disabled>Выберите маршрут</option>
+              <option value="из A в B">из A в B</option>
+              <option value="из B в A">из B в A</option>
+              <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+            </select>
+        </div>
+      </section>
+      <section class="time hide">
+        <div class="time__wrapper">
+            <h2 class="time__title">Выберите время</h2>
+            <label>
+              <select class="timeAB time__select  " name="timeAB" id="timeAB">
+              </select>
+              <select class="timeBA time__select  " name="timeBA" id="timeBA">
+                <option value="из B в A" disabled>из B в A</option>
+              </select>
+              <select class="timeABA time__select " name="timeABA" id="timeABA">
+              </select>
+            </label>
+            <button class="select__btn">Выбрать</button>
+        </div>
+      </section>
+      <section class="tiket hide">
+        <div class="tiket__wrapper">
+          <h2 class="tiket__title">Количество билетов</h2>
+            <label>
+              <input type="number" id="num">
+              <button class="final__btn">Посчитать</button>
+            </label>
+        </div>
+      </section>
+      <section class="result hide">
+        <div class="result__wrapper">
+            <h2 class="time__title">Результат</h2>
+            <h2 class="result__title">Вы выбрали <span class="response__number"></span>
+              билета по маршруту <span class="response__rout"></span> <br> стоимостью <span class="response__prise"></span>р.
+              Это путешествие займет у вас <span class="response__time">40</span> минут. 
+              Теплоход отправляется в <span class="response__shipment"></span>, а прибудет в <span class="response__arrival"></span><span class="response__arrival-second"></span>. Приятного путешествия! =)</h2>
+        </div>
+      </section>
+    </div>
+
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

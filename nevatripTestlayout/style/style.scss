@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    overflow-y: hidden;
+}
+body {
+    overflow-y: hidden;
+}
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.container {
+    margin: 0 auto;
+}
+.card {
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    width: 341px;
+    height: auto;
+    border: 0.3px solid #828282;
+    border-radius: 16px;
+    z-index: 150;
+    .card__wrapper {
+        .card__imgBlock {
+            position: relative;
+            z-index: 1;
+            .card__img {
+                width: 100%;
+            }
+            .card__imgBlock-news {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 15%;
+                left: 0;
+                width: 25%;
+                height: 16%;
+                background: #FED74B;
+                font-weight: 600;
+                font-size: 12px;
+                color: #3E3E3E;
+            }
+        }
+        .card__content {
+            padding: 0 15px;
+            .card__header {
+                display: flex;
+                flex-direction: column-reverse;
+                margin: 14px 0 10px 0;
+                .card__title {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                .card__timer{  
+                    width: 100px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .timer__icon {
+                        width: 19px;
+                        height: 19px;
+                    }
+                    .timer__text {
+                        margin: 0 0 0 9px;
+                        font-size: 12px;
+                        color: #9E9E9E;
+                    }
+                }
+            }
+            .card__advantages {
+                display: flex;
+                margin-top: -20px;
+                padding: 0;
+                .advantages__list {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    .advantages__item {
+                        margin-top: 9px;
+                        list-style-type: none;
+                        .advantages__text {
+                            margin: 0 0 0 20px;
+                            font-size: 14px;
+                            color: #4B4B4B;
+                            .card__times {
+                                margin: 10px -15px 0 30px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                .time__item {
+                                    cursor: pointer;
+                                    border: none;
+                                    margin: 2px;
+                                    text-decoration: none;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 63px;
+                                    height: 24px;
+                                    background: #D9E8FF;
+                                    border-radius: 11px;
+                                    color: #343434;
+                                    font-size: 14px;
+                                    transition: 0.2s;
+                                    &:hover {
+                                        background: #49AADA;
+                                        color: #ffff;
+                                    }
+                                }
+                                .hide {
+                                    display: none;
+                                }
+                                .time__btn {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .card__servise {
+                margin: 41px 0 19px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .card__prise {
+                    margin: 0 0 0 19px;
+                    display: flex;
+                    flex-direction: column;
+                    .prise {
+                        font-size: 30px;
+                        color: #000000;
+                    }
+                    .subprise {
+                        font-size: 10px;
+                        color: #000000;
+                    }
+                }
+                .card__btn {
+                    cursor: pointer;
+                    width: 165px;
+                    height: 44px;
+                    background: #FED74B;
+                    border: none;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    color: #404040;
+                    transition: 0.2s;
+                    &:hover {
+                        background: #CBA500;
+                    }
+                }
+            }
+        }
+    }
+}
+@import './_media.scss';
